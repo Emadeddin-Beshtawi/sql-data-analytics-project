@@ -21,11 +21,20 @@ This project answers real business questions such as:
 - Provide **customer and product reports** as views for direct consumption.  
 - Showcase SQL analytical functions such as **LAG, SUM OVER, CASE, DATEPART** for real-world use cases.  
 ---
-## Datasets Used  
-This project relies on the **CRM** and **ERP** datasets prepared in the Data Warehouse project, specifically their transformed **Gold Layer views**.  
+## Datasets Used
+The underlying datasets are provided by the vendored **Data Warehouse**:
 
-- CRM: customers, products, sales orders.  
-- ERP: customer demographics, locations, product categories.  
+**CRM (source_crm/)**
+- `cust_info.csv` — customer master
+- `prd_info.csv` — product master
+- `sales_details.csv` — sales order lines
+
+**ERP (source_erp/)**
+- `CUST_AZ12.csv` — customer demographics
+- `LOC_A101.csv` — customer country
+- `PX_CAT_G1V2.csv` — product category metadata
+
+> These are available in this repo via `https://github.com/Emadeddin-Beshtawi/sql-data-warehouse-project`
 ---
 ## Repository Structure  
 ```text
